@@ -1,1 +1,3 @@
-The scripts does the preprocessing step in converting COVID CDE data element report to BRICS CDE report structure (https://fitbir.nih.gov/content/data-dictionary#helpful-documents)
+The scripts does the preprocessing step in converting COVID CDE data element report 
+to BRICS CDE report structure (https://fitbir.nih.gov/content/data-dictionary#helpful-documents)
+to be run through MetaMap
