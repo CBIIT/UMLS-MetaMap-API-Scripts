@@ -1,0 +1,3 @@
+The list of stop words developed by the project, 
+these stop words should be removed from CDE attributes prior submiting CDEs to MetaMap for mapping to UMLS concepts
+The list is editable and we propose that other projects which use our scripts do review this list adn edit it if needed
