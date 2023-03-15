@@ -1,0 +1,6 @@
+"NCIt concept lineage retrieval form EVS file.xls" is  a MS Excel file 
+which uses a formula applied to December 2022 NCI Thesaurus download from EVS (https://evs.nci.nih.gov/ftp1/) 
+to retrieve a concept lineage for a given NCIt concept
+___________
+"How to Generate NCI Thesaurus Concept Lineage.pdf" provides a detailed instruction on how to apply MS Excel formula 
+to retrieve a concept lineage for a given NCIt concept
