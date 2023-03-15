@@ -1,6 +1,12 @@
+As an input, the script takes the curated "NCIt concept lineage retrieval form EVS file.xls" file from nci-concept-lineage and generates a tree like structure 9as a TXT file)
+where NCIt concepts and CUIs are presented as branches and common data elements as leaves.
+
 After the curation of the retrieved CUIs from metamap-umls-to-vocabularies script which retrievs NCI (or choice of vocabulary mapping) CUIs for a given UMLS CUIs 
-we are able to restructure
-our file so that we can output a visualization to our NCI lineage via the tree .txt files. This is done by taking the multiple
+and after curating/editong the curated "NCIt concept lineage retrieval form EVS file.xls" file
+
+we output a visualization to our NCI lineage via the tree .txt files. 
+
+This is done by taking the multiple
 COVID CDE file and parsing the data into .csv files. We then process each file by using only the 'CDE' and 
 'NCIt Concept Lineage' columns. This involves two pre-processing steps, the first being that the 'CDE column' must be 
 separated from the 'NCIt Concept Lineage' column. The latter column is processed so that we can use the delimiters to separate
