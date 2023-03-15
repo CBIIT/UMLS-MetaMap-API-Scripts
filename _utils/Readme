@@ -1,1 +1,3 @@
-Contains additional packages which needed to run the scripts
+skr_web_python_api - is used for MetaMap API code included and it is from Will J Roger's repository --> https://github.com/lhncbc/skr_web_python_api
+This package is generated from the  Python-based API for the Indexing Initiative Scheduler facility was created by NLM to provide users with the ability to programmatically submit jobs to the Scheduler Batch and Interactive facilities instead of using the web-based interface.
+For more information, refer to the Will J Roger's repository Git repo: https://github.com/lhncbc/skr_web_python_api
