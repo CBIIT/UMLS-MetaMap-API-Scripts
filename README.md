@@ -20,24 +20,25 @@ The scripts were tested under Anaconda Navigator (Anaconda 3)
 Tools:
 Anaconda distribution, JupyterLab, Jupyter Notebooks
 
-Modules used:
++++Modules used:+++
+
 The modules needed to run the above three scripts include the following:
 
-Pandas
-Numpy
-OS
-treelib
-Tree(from treelib)
-pathlib
-Path(from Path)
-shutil
-glob
-tkinter
-filedialog(from tkinter)
-json
-pprint
-openpyxl
-requests
+Pandas;
+Numpy;
+OS;
+treelib;
+Tree(from treelib);
+pathlib;
+Path(from Path);
+shutil;
+glob;
+tkinter;
+filedialog(from tkinter);
+json;
+pprint;
+openpyxl;
+requests;
 
 To use the MetaMap python API requires to build it on your local the Python-based API 
 created for the Indexing Initiative Scheduler facility (NLM) used to provide users with the ability to programmatically submit jobs to 
@@ -46,4 +47,11 @@ the Scheduler Batch and Interactive facilities. Available at https://github.com/
 Anaconda environment: 
 Download the environment files to use in Anaconda, to make your life easier.
 
++++ UMLS API+++
+
+
 The UMLS API key needed which can be found in the "My Profile" section of your account at UMLS (https://uts.nlm.nih.gov/uts/login).
+
+umls_api_settings:
+  url : "https://utslogin.nlm.nih.gov/cas/v1/api-key"
+  uri :  "https://uts-ws.nlm.nih.gov"
