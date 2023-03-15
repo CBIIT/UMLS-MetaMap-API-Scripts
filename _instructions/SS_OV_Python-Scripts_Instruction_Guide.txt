@@ -1,0 +1,132 @@
+Scripts:
+
+Step A: Preprocessing of CDE attributes:
+Directory:
+"A CDE to UMLS preprocessing\main.py" 
+The scripts does the preprocessing step in converting COVID CDE data element report to BRICS CDE report structure
+SS #DE_Report-Fitbir.py (data element report to Fibir report structure
+
+Step B: Mapping CDE 9and CDE PVs) attribures to UMLS concepts
+Directory:
+"B UMLS CDE and PVs\" 
+The set of scripts (developed by KA (BRICS)) is designed to map CDE attributes to UMLS concepts.
+can be run either as Jupiter notebook files (.ipynb or a Pythin scripts (.py) 
+
+Requirements
+To use the MetaMap python API requires to build it on your local the Python-based API 
+created for the Indexing Initiative Scheduler facility (NLM) used to provide users with the ability to programmatically submit jobs to 
+the Scheduler Batch and Interactive facilities. Available at https://github.com/lhncbc/skr_web_python_api
+
+Scripts usage:
+Run the scripts in the following order (although it shouldn’t matter if you do DEs or PVs first).
+
+1.  *DE_UMLS_MetaMap_API_search*  ipynb or .py file - uses API to MetaMap to assign UMLS CUIs to a given CDE.
+    
+1a.  manual curation of the output from DE_UMLS_MetaMap_API_search script
+    
+2.  *DE_UMLS_FITBIR_DE_REPORT_merge*  ipynb or .py file - merges the curated file from #1 to the original CDE report.
+    
+3.  *PV_UMLS_API_search*  ipynb or .py file - uses API to UMLS to find UMLS CUIS for a given PV
+    
+3a.  You can select the “DE_step2_xyz_dataElementImport_cuis.csv” file to use as an input to run the pipeline in series. 
+This will create a subdirectory in the DE_Step-2 directory for PV script output and the DE cuis will go along for the ride 😊
+    
+3b.  manual PV CUI curation
+    
+4.  *PV_UMLS_FITBIR_DE_REPORT_merge.ipynb*
+    
+8.  If you ran the DE and PV scripts in series, you can use the “PV_step2_xyz_dataElementImport_cuis.csv” as a final data element import csv.
+    
+9.  *IMPORT_DE_PV_cui_merge*
+    
+10. If you ran the DE and PV scripts in parallel (each starting from the original data element report), you can use this script to merge the two outputs for a final data element import csv.
+    
+11. *check_missing_cuis.ipynb* - checks if some PVs were not assigned CUIs
+    
+12. If you ran the DE and PV scripts either in series or parallel, you can run this on the final data element import csv to verify the completeness.
+    
+
+Step C: 
+
+2. UMLS_NCI_Mapping.py (UMLS CUIs to NCI, or vocabulary of choice mapping)
+3. Multiple_COVID_NCITree.py (Creates trees from multiple COVID CDE tree lineages)
+
+
+__________
+Requirements:
+The scripts were tested under Anaconda Navigator (Anaconda 3) 
+
+Tools:
+Anaconda distribution, JupyterLab, Jupyter Notebook
+
+Modules used:
+The modules needed to run the above three scripts include the following:
+
+Pandas
+Numpy
+OS
+treelib
+Tree(from treelib)
+pathlib
+Path(from Path)
+shutil
+glob
+tkinter
+filedialog(from tkinter)
+json
+pprint
+openpyxl
+requests
+
+To use the MetaMap python API requires to build it on your local the Python-based API 
+created for the Indexing Initiative Scheduler facility (NLM) used to provide users with the ability to programmatically submit jobs to 
+the Scheduler Batch and Interactive facilities. Available at https://github.com/lhncbc/skr_web_python_api
+
+Anaconda environment: 
+Download base_env_KA.yaml file to use as Anaconda environment, to make your life easier.
+
+The UMLS API key needed which can be found in the "My Profile" section of your account at UMLS.
+
+The following test files were utilized as the input files during the testing phase of the Python scripts.
+
+1. DE_Report-Fitbir.py => 'COVID Testing and Tracing.csv'
+2. UMLS_NCI_Mapping.py => 'Table_1.csv'
+3. Multiple_COVID_NCITree.py => 'Multple COVID CDE Domains.xlsx'
+
+SUMMARY:
+
+1. DE_Report-Fitbir.py
+
+File pre-processing is done to format the original DE report structures into Fitbir so that KA's script can read them. 
+
+2. UMLS_NCI_Mapping.py
+
+Before the file is processed, the GUI module allows you to select a vocabulary of your choice,so that the script can filter on it via the
+'Vocabulary' column which includes a list of all the vocabularies in which the particular UMLS CUI can be found. Using this criteria, 
+it is able to utilize the queried API data by filtering it on the 'rootSource' key found within the nested list of the API data.
+The data retrieved is then restructured inside a new table, where it is able to be matched against the 
+original table via the join function. We have only unique values across the table remaining in our final output file.
+
+3. Multiple_COVID_NCITree.py
+
+After the curation of the file retrieved from the UMLS to NCI (or choice of vocabulary mapping) we are able to restructure
+our file so that we can output a visualization to our NCI lineage via the tree .txt files. This is done by taking the multiple
+COVID CDE file and parsing the data into .csv files. We then process each file by using only the 'CDE' and 
+'NCIt Concept Lineage' columns. This involves two pre-processing steps, the first being that the 'CDE column' must be 
+separated from the 'NCIt Concept Lineage' column. The latter column is processed so that we can use the delimiters to separate
+parent from child and so forth. Once the file is restructured we are able to join our two files back together and allow
+the tree algorithm to ingest each of the combined files and process them separately so that we can output individual .txt tree files
+displaying the NCIt Concept Lineage like a tree. We are therefore also able to output an aggregated tree file which includes a tree output
+from each of the tree files.
+
+Notes:
+
+These pipelines serves as a foundation to future work. As far as use case, the pipelines are meant to be extensible and adaptable.
+For instance, the pipelines can be modfied to have a more user-friendly design. Future modifications can allow for various DE report structures 
+to be ingested by KA's pipeline by allowing an option to restructure the report based on the origination of the DE report. The pipelines can 
+be modified to be more robust in terms of validation, accountability, and structure. 
+
+
+
+
+
