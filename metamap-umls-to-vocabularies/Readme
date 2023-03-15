@@ -1,0 +1,2 @@
+a script which hits  API to UMLS (https://documentation.uts.nlm.nih.gov/rest/home.html)
+and for each common data elemnt (CDE) mapped UMLS cocnept(s) returns NCI, or LOINC or SNOMEDCT_US concept CUIs for a given UMLS CUI.
