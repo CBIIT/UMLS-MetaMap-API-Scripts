@@ -1,0 +1,10 @@
+After the curation of the retrieved CUIs from metamap-umls-to-vocabularies script which retrievs NCI (or choice of vocabulary mapping) CUIs for a given UMLS CUIs 
+we are able to restructure
+our file so that we can output a visualization to our NCI lineage via the tree .txt files. This is done by taking the multiple
+COVID CDE file and parsing the data into .csv files. We then process each file by using only the 'CDE' and 
+'NCIt Concept Lineage' columns. This involves two pre-processing steps, the first being that the 'CDE column' must be 
+separated from the 'NCIt Concept Lineage' column. The latter column is processed so that we can use the delimiters to separate
+parent from child and so forth. Once the file is restructured we are able to join our two files back together and allow
+the tree algorithm to ingest each of the combined files and process them separately so that we can output individual .txt tree files
+displaying the NCIt Concept Lineage like a tree. We are therefore also able to output an aggregated tree file which includes a tree output
+from each of the tree files.
