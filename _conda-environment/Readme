@@ -1,1 +1,6 @@
-to store sample conda environments
+This directory contains 2 examples of conda environments
+base_env.yaml
+data_dictionary_cui_mapping_env.txt
+
+Both files can be imported as conda environments 
+Refer to https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html to learn how to import conda environments
