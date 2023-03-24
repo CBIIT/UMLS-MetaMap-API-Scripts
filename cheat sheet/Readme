@@ -1,0 +1,14 @@
+This folder if to store the “cheat sheet list” of UMLS concepts, 
+which have been reviewed and approved by the curator as valid concepts for a given CDE project.
+________________
+One of MetaMap’s weakness, on which the MetaMap team is aware, 
+is its inability to resolve UMLS Metathesaurus ambiguity, 
+when two or more UMLS concepts share a common synonym. 
+To solve that problem, in MetaMap has recently been incorporated word sense disambiguation (WSD) algorithm, 
+which resolves Metathesaurus ambiguity by choosing a concept having the most likely semantic type for a given context.
+Unfortunately, in the specific case of mapping CDEs, 
+their attributes do not always provide enough context, 
+even when CDE definition (usually the longest chunk of text in a CDE) is included into mapping.
+To address that problem, we found helpful to support the “cheat sheet list” of UMLS concepts, 
+which have been reviewed and approved by the curator as valid concepts for a given CDE project. 
+Having this cheat sheet helps selecting the right concept from the list returned by MetaMap. 
