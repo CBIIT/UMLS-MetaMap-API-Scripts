@@ -1,0 +1,1075 @@
+NCI Concept
+├── Activity (C43431) 
+│   ├──  Action (C25404) 
+│   │   ├──  Bathing (C86050) 
+│   │   │   └── Washing and Dressing Disability 
+│   │   ├──  Care (C61488) 
+│   │   │   └── Usual Place of Health Care Type*
+│   │   ├──  Collection (C25453) 
+│   │   │   └── Biospecimen Collection Vial Type Specify Other
+│   │   ├──  Defer (C79754) 
+│   │   │   └── Cost Delayed Healthcare Occurrence Indicator
+│   │   ├──  Exacerbation (C124138) 
+│   │   │   ├── Symptom Exacerbation Occurrence Indicator
+│   │   │   ├── Symptom Exacerbation Specify Other Type
+│   │   │   └── Symptom Exacerbation Type
+│   │   ├──  Expand (C96889) 
+│   │   │   └── Sexual Orientation Expanded Status
+│   │   ├──  Instruction Imperative (C64913) 
+│   │   │   ├──  Clean (C65076) 
+│   │   │   │   └──  Wash (C65077) 
+│   │   │   │       └── Washing and Dressing Disability 
+│   │   │   ├──  Schedule Frequency (C64493) 
+│   │   │   │   └──  Monthly (C64498) 
+│   │   │   │       ├── Pre-Pandemic Monthly Income Amount
+│   │   │   │       └── Pre-Pandemic Monthly IncomeÂ Range
+│   │   │   └──  Storage (C60824) 
+│   │   │       └── Long-term storage temperature
+│   │   ├──  Occur (C54069) 
+│   │   │   └── Hospital Intensive Care Unit Admission Occurrence Indicator
+│   │   ├──  Provide (C80514) 
+│   │   │   └── Healthcare Setting Type
+│   │   ├──  Receive (C25639) 
+│   │   │   └── COVID-19 Treatment or Device Type
+│   │   ├──  Reporting (C25651) 
+│   │   │   └── Patient Status
+│   │   ├──  Retirement (C78237) 
+│   │   │   ├── Employment Status
+│   │   │   └── Parent's Employment Status
+│   │   ├──  Return (C71900) 
+│   │   │   └── Recent Travel Date of Return in the 14 days prior to onset of symptoms or illness
+│   │   ├──  Routine (C47893) 
+│   │   │   └── Distance to Routine Healthcare in Miles
+│   │   ├──  Share (C73624) 
+│   │   │   ├── Shared Living Space Number of Individuals
+│   │   │   └── Shared Living Space Person Ability to Isolate Indicator
+│   │   ├──  Specify (C25685) 
+│   │   │   ├── COVID-19 Vaccine Specify Other Name
+│   │   │   └── Health Insurance Specify Other Type
+│   │   ├──  Travel (C53462) 
+│   │   │   ├──  Transportation (C141286) 
+│   │   │   │   ├── Type of Transportation Used to Get to Healthcare
+│   │   │   │   └── Type of Transportation Used to Get to Healthcare, Specify Other
+│   │   │   ├── Recent Travel Date of Arrival in the 14 days prior to onset of symptoms or illness
+│   │   │   ├── Travel Destination Country 
+│   │   │   ├── Travel Destination State
+│   │   │   └── Travel History in 14 days prior to onset of symptoms or illness
+│   │   └──  Work (C74299) 
+│   │       └── Employment Status
+│   ├──  Administrative Activity (C49235) 
+│   │   ├──  Form Directive (C157093) 
+│   │   │   └──  Specify Other (C157106) 
+│   │   │       ├── Allergen Specify Other Type
+│   │   │       ├── COVID-19 Specific Medication Specify Other Type
+│   │   │       ├── COVID-19 Specific Medication Specify Other Type Other COVID-19-Specific Medication, Specify:
+│   │   │       ├── Healthcare Setting Specify Other Type
+│   │   │       ├── Healthcare Setting Specify Other Type Specify other healthcare setting
+│   │   │       ├── Patient Specify Other Status
+│   │   │       ├── Patient Specify Other Status Specify other patient type
+│   │   │       ├── SARS-CoV-2 Genome Variant Specify Other Name
+│   │   │       ├── SARS-CoV-2 Spike Protein Mutations Specify Other Name
+│   │   │       ├── Sexual Orientation Specify Other Expanded Status
+│   │   │       ├── Symptom Duration After Diagnosis Specify Other Type
+│   │   │       └── Symptom Duration Before Diagnosis Specify Other Type
+│   │   └──  Patient Discharge (C25166) 
+│   │       ├── CMS Discharge Disposition
+│   │       ├── Discharge Date
+│   │       ├── Discharge Diagnosis
+│   │       ├── Discharge Diagnosis Specify Other
+│   │       ├── Self-Report Discharge Date
+│   │       ├── Self-Report Discharge Disposition*
+│   │       ├── Symptom at Discharge Occurrence Indicator
+│   │       ├── Symptom at Discharge Specify Other Type
+│   │       └── Symptom at Discharge Type
+│   ├──  Behavior (C16326) 
+│   │   ├──  Personal Behavior (C19683) 
+│   │   │   ├──  Informed Consent (C16735) 
+│   │   │   │   ├── Informed Consent Signed Date N/A or Not Reported Indicator
+│   │   │   │   ├── Informed Consent Signed Indicator
+│   │   │   │   └── Informed Consent Type
+│   │   │   └──  Sex Behavior (C17127) 
+│   │   │       └── Sexual Orientation Status
+│   │   ├── SARS-CoV-2 Risk Behavior Occurrence Indicator
+│   │   └── SARS-CoV-2 Risk Behavior Type
+│   ├──  Clinical or Research Activity (C16203) 
+│   │   ├──  Healthcare Activity (C16205) 
+│   │   │   ├──  Hospitalization (C25179) 
+│   │   │   │   ├── Days Hospitalized 
+│   │   │   │   ├── Hospitalization Admission Source Type
+│   │   │   │   ├── Hospitalization Date*
+│   │   │   │   ├── Time from COVID DX to Hospitalization
+│   │   │   │   ├── Time from COVID DX to Hospitalization Unit of Measure
+│   │   │   │   ├── Time from COVID Symptom Onset to Hospitalization
+│   │   │   │   └── Time from COVID Symptom Onset to Hospitalization Unit of Measure
+│   │   │   ├── Cost Delayed Healthcare Occurrence Indicator
+│   │   │   ├── Delayed Healthcare Due to Transportation Indicator
+│   │   │   ├── Employed in Healthcare Indicator
+│   │   │   ├── Healthcare Setting Specify Other Type
+│   │   │   ├── Healthcare Setting Type
+│   │   │   ├── Healthcare Setting Used Most Often Specify Other Type
+│   │   │   ├── Healthcare Setting Used Most Often Type
+│   │   │   ├── Importance of Health Insurance in Seeking Care
+│   │   │   ├── Other Frontline or Essential Worker Indicator
+│   │   │   ├── Treating Healthcare Facility Name
+│   │   │   ├── Treating Healthcare Facility Name What is the facility name where the patient was treated?
+│   │   │   ├── Type of Transportation Used to Get to Healthcare
+│   │   │   ├── Type of Transportation Used to Get to Healthcare, Specify Other
+│   │   │   └── Usual Place of Health Care Type*
+│   │   ├──  Intervention or Procedure (C25218) 
+│   │   │   ├──  Diagnostic Procedure (C18020) 
+│   │   │   │   ├──  Biospecimen Collection (C70945) 
+│   │   │   │   │   ├── Biospecimen Collection Vial Type
+│   │   │   │   │   └── Biospecimen Collection Vial Type Specify Other
+│   │   │   │   ├──  Detection (C16210) 
+│   │   │   │   │   └── SARS-CoV-2 Test COVID-19 Infection Detection
+│   │   │   │   ├──  Diagnosis (C15220) 
+│   │   │   │   │   ├── CMS Discharge Disposition
+│   │   │   │   │   ├── Discharge Diagnosis
+│   │   │   │   │   ├── Self-Report Discharge Disposition*
+│   │   │   │   │   ├── Self-Reported COVID-19 Diagnosis Date
+│   │   │   │   │   ├── Self-Reported COVID-19 Diagnosis Occurrence Indicator
+│   │   │   │   │   ├── Symptom Duration After Diagnosis Type 
+│   │   │   │   │   ├── Symptom Duration Before Diagnosis Type
+│   │   │   │   │   └── Symptom Duration Before Diagnosis Unit of Measure
+│   │   │   │   ├──  Diagnostic Imaging (C16502) 
+│   │   │   │   │   ├── Chest-X-Ray Result
+│   │   │   │   │   └── Date of Chest Examination
+│   │   │   │   ├──  Diagnostic or Prognostic Test (C18742) 
+│   │   │   │   │   └──  Research or Clinical Assessment Tool (C20993) 
+│   │   │   │   │       ├──  Clinical or Research Assessment Question (C91102) 
+│   │   │   │   │       │   └──  CPTAC Questions (C158612) 
+│   │   │   │   │       │       └──  Other Medication (C159287) 
+│   │   │   │   │       │           ├── COVID-19 Specific Medication Specify Other Type
+│   │   │   │   │       │           ├── COVID-19 Specific Medication Specify Other Type Other COVID-19-Specific Medication, Specify:
+│   │   │   │   │       │           ├── Concomitant Medication Name
+│   │   │   │   │       │           └── Concomitant Medication Name Other medications, taken than those taken to treat COVID- 19?
+│   │   │   │   │       └──  Self-Report (C74528) 
+│   │   │   │   │           ├──  Patient Self-Report (C21089) 
+│   │   │   │   │           │   ├── Self-Reported COVID-19 Diagnosis Date
+│   │   │   │   │           │   └── Self-Reported COVID-19 Diagnosis Occurrence Indicator
+│   │   │   │   │           ├── Self-Report Discharge Date
+│   │   │   │   │           ├── Self-Report Discharge Disposition*
+│   │   │   │   │           ├── Self-Reported COVID-19 Symptom Dizziness Confirmed by Heart Rate and Blood Pressure Indicator
+│   │   │   │   │           ├── Self-Reported COVID-19 Symptom Occurrence Indicator
+│   │   │   │   │           ├── Self-Reported COVID-19 Symptom Onset Date Indicator
+│   │   │   │   │           ├── Self-Reported COVID-19 Symptom Onset Date*
+│   │   │   │   │           └── Self-Reported COVID-19 Symptom Type*
+│   │   │   │   ├──  Medical Examination (C25305) 
+│   │   │   │   │   └──  Physical Examination (C20989) 
+│   │   │   │   │       ├── Physical Exam Date
+│   │   │   │   │       ├── Physical Exam Date Indicator
+│   │   │   │   │       ├── Physical Exam Findings/Sign Occurrence Indicator
+│   │   │   │   │       ├── Physical Exam Findings/Sign Specify Other Type
+│   │   │   │   │       └── Physical Exam Findings/Sign Type*
+│   │   │   │   └──  Observation (C25598) 
+│   │   │   │       └──  Vital Signs Measurement (C49672) 
+│   │   │   │           ├── Vital Signs Date and Time
+│   │   │   │           ├── Vital Signs Measurement
+│   │   │   │           ├── Vital Signs Measurement Occurrence Indicator
+│   │   │   │           ├── Vital Signs Specify Other Timepoint
+│   │   │   │           ├── Vital Signs Timepoint
+│   │   │   │           ├── Vital Signs Type*
+│   │   │   │           └── Vital Signs Unit Of Measure
+│   │   │   ├──  Laboratory Procedure (C25294) 
+│   │   │   │   └── Lab Result Not Done Occurrence Indicator
+│   │   │   └──  Therapeutic Procedure (C49236) 
+│   │   │       ├──  Adverse Event Treatment (C88082) 
+│   │   │       │   └── Adverse Event Related to Study Treatment Indicator
+│   │   │       ├──  Oxygen Therapy (C94624) 
+│   │   │       │   └── Supplemental Oxygen Occurrence Indicator
+│   │   │       └──  Pharmacologic Management (C21090) 
+│   │   │           ├──  Current Medication (C156818) 
+│   │   │           │   └── Current Medication Name
+│   │   │           └──  Pharmacotherapy Discontinuation (C128535) 
+│   │   │               ├── COVID-19 Medication Pre-mature Discontinuation Reason
+│   │   │               ├── COVID-19 Medication Pre-mature Discontinuation Reason Reason medication was discontinued, select all that apply.
+│   │   │               ├── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason
+│   │   │               └── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason Specify other reason medication was discontinued pre-maturely
+│   │   └──  Research Activity (C15429) 
+│   │       ├──  Study (C63536) 
+│   │       │   └── Adverse Event Related to Study Treatment Indicator
+│   │       └──  Testing (C15336) 
+│   │           ├── COVID-19 Symptoms At Time of Testing Indicator
+│   │           ├── Home SARS-CoV-2 Test Name
+│   │           ├── Home SARS-CoV-2 Test Specify Other Name
+│   │           ├── Hospitalized at Time of Testing Occurrence Indicator
+│   │           ├── SARS-CoV-2 Test COVID-19 Infection Detection
+│   │           ├── SARS-CoV-2 Test Date and Time
+│   │           ├── SARS-CoV-2 Test Date of Result
+│   │           ├── SARS-CoV-2 Test Manufacturer Name
+│   │           ├── SARS-CoV-2 Test Manufacturer Specify Other Name
+│   │           ├── SARS-CoV-2 Test Specify Other Processing Location Type
+│   │           ├── SARS-CoV-2 Test Specify Other Specimen Collection Location Type
+│   │           ├── SARS-CoV-2 Test Specimen Collection Location Type
+│   │           ├── SARS-CoV-2 Test Type
+│   │           └── SARS-CoV-2 Tested Occurrence Indicator
+│   ├──  Physical Activity (C17708) 
+│   │   └──  Activity of Daily Living (C53291) 
+│   │       └──  Housework (C98072) 
+│   │           ├── Employment Status
+│   │           └── Parent's Employment Status
+│   └──  Technique (C16847) 
+│       └──  Research Technique (C20368) 
+│           └──  Biomolecule Separation Technology (C18653) 
+│               └──  Chromatography (C16431) 
+│                   ├── Chromatography Method Specify Other Type
+│                   ├── Chromatography Method Type 
+│                   └── Chromatography Method Type 
+├── Biological Process (C17828) 
+│   └──  Organismal Process (C19988) 
+│       └──  Neurologic Process (C21074) 
+│           └──  Mental Process (C16840) 
+│               ├──  Attention Concentration (C41209) 
+│               │   └── Concentration Disability 
+│               ├──  Confidence (C43367) 
+│               │   └── Confidence with Health Forms
+│               ├──  Feelings (C77965) 
+│               │   └──  Indecision (C95495) 
+│               │       └── Concentration Disability 
+│               └──  Recollect (C122669) 
+│                   └── Concentration Disability 
+├── Conceptual Entity (C20181) 
+│   ├──  Agent (C1708) 
+│   │   ├──  Medication (C459) 
+│   │   │   ├── COVID-19 Medication Pre-mature Discontinuation Reason
+│   │   │   ├── COVID-19 Medication Pre-mature Discontinuation Reason Reason medication was discontinued, select all that apply.
+│   │   │   ├── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason
+│   │   │   ├── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason Specify other reason medication was discontinued pre-maturely
+│   │   │   ├── COVID-19 Specific Medication Specify Other Type
+│   │   │   ├── COVID-19 Specific Medication Specify Other Type Other COVID-19-Specific Medication, Specify:
+│   │   │   ├── COVID-19 Specific Medication Type
+│   │   │   ├── COVID-19 Specific Medication Type
+│   │   │   ├── COVID-19 Specific Medication Type What medications did the patient take to treat COVID-19?
+│   │   │   ├── Concomitant Medication Name
+│   │   │   ├── Concomitant Medication Name Other medications, taken than those taken to treat COVID- 19?
+│   │   │   ├── Concomitant Medication Name*
+│   │   │   ├── Current Medication Dose
+│   │   │   ├── Current Medication Dose For each medication, specify dose
+│   │   │   ├── Current Medication Dose Frequency
+│   │   │   ├── Current Medication Dose Frequency For each medication, specify frequency
+│   │   │   ├── Current Medication Dose Unit of Measure
+│   │   │   ├── Current Medication Dose Unit of Measure For each medication, specify unit of measure
+│   │   │   ├── Medication Discontinued Date
+│   │   │   ├── Medication Discontinued Date Unknown Indicator
+│   │   │   ├── Medication Discontinued Date Unknown Indicator Was the date when the medication was discontinued unknown?
+│   │   │   └── Medication Discontinued Date What date was the medication prematurely discontinued?
+│   │   ├──  Metabolite (C61154) 
+│   │   │   ├── Major Classes of Metabolites Examined
+│   │   │   ├── Metabolite Analysis Type
+│   │   │   ├── Metabolite Class Examined Specify Other
+│   │   │   └── Metabolite High level techniques used for identification
+│   │   └──  Over the Counter Product (C54068) 
+│   │       └── Current Medication Name
+│   ├──  Code (C25162) 
+│   │   ├──  Country Code (C20108) 
+│   │   │   └── Travel Destination Country 
+│   │   └──  Postal Code (C25621) 
+│   │       └── Address Postal Code
+│   ├──  Consent (C25460) 
+│   │   └── Informed Consent Type
+│   ├──  Criterion (C25466) 
+│   │   └── Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
+│   ├──  Data Element (C41002) 
+│   │   └──  Measurement Unit Description (C92571) 
+│   │       └──  Original Result Unit (C82586) 
+│   │           └──  Laboratory Test Original Result Unit (C83106) 
+│   │               └── Lab Result Unit of Measure
+│   ├──  Decision (C53285) 
+│   │   └── Importance of Health Insurance in Seeking Care
+│   ├──  Difficulty (C62189) 
+│   │   ├── Daily Activities Disability
+│   │   └── Washing and Dressing Disability 
+│   ├──  Domain (C62289) 
+│   │   └──  Submission Domain (C49556) 
+│   │       └──  Clinical Events Domain (C85441) 
+│   │           └── Lab Result Date
+│   ├──  Event (C25499) 
+│   │   └──  Occurrence (C25275) 
+│   │       ├── Cost Delayed Healthcare Occurrence Indicator
+│   │       ├── SARS-CoV-2 Risk Behavior Occurrence Indicator
+│   │       ├── SARS-CoV-2 Spike Protein Mutations Occurrence Indicator
+│   │       └── Self-Reported COVID-19 Symptom Occurrence Indicator
+│   ├──  Experience (C54627) 
+│   │   └── Self-Reported COVID-19 Symptom Type*
+│   ├──  Facility (C62574) 
+│   │   └──  Clinical or Research Facility (C38186) 
+│   │       └──  Laboratory (C37984) 
+│   │           ├── Lab Result Specify Other Type
+│   │           └── Lab Result Value
+│   ├──  Factor (C25506) 
+│   │   └──  Aggravating Factor (C94433) 
+│   │       └── Symptom Exacerbation Specify Other Type
+│   ├──  Geographic Area (C16632) 
+│   │   ├──  City (C25160) 
+│   │   │   └── Address City Name
+│   │   ├──  County (C49292) 
+│   │   │   ├── Address County Name
+│   │   │   └── Address County Name
+│   │   ├──  Living Quarters (C86029) 
+│   │   │   └──  Residence (C25273) 
+│   │   │       └── Years at Residence
+│   │   ├──  Sites of Care Delivery (C19696) 
+│   │   │   ├──  Healthcare Facility (C21541) 
+│   │   │   │   ├──  Clinics and Hospitals (C19326) 
+│   │   │   │   │   └──  Hospital (C16696) 
+│   │   │   │   │       ├── Distance to Routine Healthcare in Miles
+│   │   │   │   │       └── Distance to Testing in Miles
+│   │   │   │   ├──  Intensive Care Unit (C53511) 
+│   │   │   │   │   ├── Days in Intensive Care Unit 
+│   │   │   │   │   └── Hospital Intensive Care Unit Admission Occurrence Indicator
+│   │   │   │   ├── Distance to Routine Healthcare in Miles
+│   │   │   │   ├── Distance to Testing in Miles
+│   │   │   │   ├── Healthcare Setting Specify Other Type
+│   │   │   │   ├── Healthcare Setting Specify Other Type Specify other healthcare setting
+│   │   │   │   ├── Treating Healthcare Facility Name
+│   │   │   │   ├── Treating Healthcare Facility Name What is the facility name where the patient was treated?
+│   │   │   │   ├── Type of Transportation Used to Get to Healthcare
+│   │   │   │   └── Type of Transportation Used to Get to Healthcare, Specify Other
+│   │   │   └──  Worksite (C17556) 
+│   │   │       └── Telework Eligibility Status
+│   │   └──  State (C87194) 
+│   │       ├──  US State (C30010) 
+│   │       │   └── Birthplace US State
+│   │       ├── Address State Code
+│   │       ├── Address State Code
+│   │       └── Travel Destination State
+│   ├──  Group (C43359) 
+│   │   └──  Population Group (C17005) 
+│   │       ├──  Age Group (C20587) 
+│   │       │   ├──  Adult (C17600) 
+│   │       │   │   └── Shared Living Space Number of Individuals
+│   │       │   └──  Child (C16423) 
+│   │       │       └── Shared Living Space Number of Individuals
+│   │       ├──  Ethnic Group (C16564) 
+│   │       │   ├── Ancestry
+│   │       │   ├── Ethnicity*
+│   │       │   └── Ethnicity*
+│   │       ├──  Personnel (C60758) 
+│   │       │   └──  Research Personnel (C17089) 
+│   │       │       └──  Employer (C54144) 
+│   │       │           └── Ability to Find Equivalent Job
+│   │       ├──  Professional Organization or Group (C19711) 
+│   │       │   └──  Centers for Medicare and Medicaid Services (C95516) 
+│   │       │       └── CMS Discharge Disposition
+│   │       ├──  Race (C17049) 
+│   │       │   ├── Race
+│   │       │   └── Race*
+│   │       └──  Social Group (C18230) 
+│   │           └──  Household (C41194) 
+│   │               ├── Pre-Pandemic Monthly Income Amount
+│   │               ├── Pre-Pandemic Monthly IncomeÂ Range
+│   │               └── Shared Living Space Person Ability to Isolate Indicator
+│   ├──  History (C54625) 
+│   │   ├──  Personal Medical History (C18772) 
+│   │   │   └──  Other Personal Medical History (C53263) 
+│   │   │       └──  History of Medication (C168253) 
+│   │   │           ├── COVID-19 Specific Medication Type
+│   │   │           └── COVID-19 Specific Medication Type What medications did the patient take to treat COVID-19?
+│   │   └──  Social History (C81292) 
+│   │       └──  Travel History (C173619) 
+│   │           └── Travel History in 14 days prior to onset of symptoms or illness
+│   ├──  Indicator (C25180) 
+│   │   └──  Event Occurrence Indicator (C82438) 
+│   │       ├──  Adverse Event Ongoing (C83051) 
+│   │       │   └── Adverse Event Ongoing Indicator
+│   │       └──  Test Occurrence (C82525) 
+│   │           └── SARS-CoV-2 Tested Occurrence Indicator
+│   ├──  Insecurity (C171543) 
+│   │   └──  Job Insecurity (C171544) 
+│   │       └── Job Insecurity in 12 Months
+│   ├──  Intellectual Property (C97331) 
+│   │   ├──  Classification (C25161) 
+│   │   │   ├──  Adverse Event Classification (C48276) 
+│   │   │   │   └──  Common Terminology Criteria for Adverse Events (C49704) 
+│   │   │   │       └── Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
+│   │   │   ├──  Class (C25346) 
+│   │   │   │   └── Major Classes of Metabolites Examined
+│   │   │   ├── COVID-19 Case Classification
+│   │   │   └── COVID-19 Case Classification Date
+│   │   └──  Document (C19498) 
+│   │       ├──  Address (C25407) 
+│   │       │   ├── Address City Name
+│   │       │   ├── Address County Name
+│   │       │   ├── Address Line 1
+│   │       │   ├── Address Line 2
+│   │       │   ├── Address Postal Code
+│   │       │   ├── Address State Code
+│   │       │   ├── Full Residential Address*
+│   │       │   └── Years at Residence
+│   │       ├──  Advance Directive (C93142) 
+│   │       │   └──  Do Not Resuscitate Order (C93313) 
+│   │       │       └── New or revised end of life instructions (DNR)?during hospitalization?Indicator
+│   │       ├──  Form (C19464) 
+│   │       │   └── Confidence with Health Forms
+│   │       ├──  Identifier (C25364) 
+│   │       │   └──  Unique Identifier (C70663) 
+│   │       │       └── Unique ID
+│   │       ├──  Medical Order (C177532) 
+│   │       │   └──  Physician Orders for Life Sustaining Treatment (C176984) 
+│   │       │       └── Physician Orders for Life Sustaining Treatment (POLST) Indicator
+│   │       └──  Signature (C25678) 
+│   │           └── Informed Consent Signed Date
+│   ├──  Investigation Finding (C61036) 
+│   │   └── Ability to Find Equivalent Job
+│   ├──  Language (C16779) 
+│   │   └──  Spoken Language (C51277) 
+│   │       ├──  Indo-European Language (C160962) 
+│   │       │   └──  Germanic Language (C161904) 
+│   │       │       └──  West Germanic Language (C160956) 
+│   │       │           └──  English Language (C82847) 
+│   │       │               └── English Proficiency Level
+│   │       └── Primary Language Spoken at home?
+│   ├──  Material (C48187) 
+│   │   └──  Specimen (C19157) 
+│   │       ├──  Biospecimen (C70699) 
+│   │       │   ├── Aliquot volume in mL
+│   │       │   ├── Metabolomics Biospecimen Specify Other Type
+│   │       │   ├── Metabolomics Biospecimen Type
+│   │       │   └── Minutes until sample collected reaches the freezer 
+│   │       ├── SARS-CoV-2 Test Specify Other Specimen Collection Location Type
+│   │       ├── Sample Collection Date
+│   │       ├── Sample Collection Date
+│   │       └── Sample Collection Time
+│   ├──  Means (C47955) 
+│   │   └──  Method (C71460) 
+│   │       ├──  Method Of Identification (C90422) 
+│   │       │   └── Metabolite High level techniques used for identification
+│   │       └──  Test Method (C82535) 
+│   │           └── Chromatography Method Type 
+│   ├──  Miscellaneous Molecular Biology Terms (C19896) 
+│   │   ├──  Genome Variation (C179559) 
+│   │   │   ├── SARS-CoV-2 Genome Variant Name
+│   │   │   ├── SARS-CoV-2 Genome Variant Occurrence Indicator
+│   │   │   └── SARS-CoV-2 Genome Variant Specify Other Name
+│   │   └──  Rh Factor (C67517) 
+│   │       └── Blood Type
+│   ├──  Name (C42614) 
+│   │   └──  Person Name (C25191) 
+│   │       ├──  First Name (C40974) 
+│   │       │   └── First Name
+│   │       ├──  Last Name (C40975) 
+│   │       │   └── Last Name
+│   │       ├──  Middle Name (C188268)
+│   │       │   └── Middle Name
+│   │       └── Full Name
+│   ├──  Need (C41204) 
+│   │   ├── Cost Delayed Healthcare Occurrence Indicator
+│   │   └── Usual Place of Health Care Type*
+│   ├──  Occupation or Discipline (C19160) 
+│   │   ├──  Occupation (C25193) 
+│   │   │   ├──  Miscellaneous Occupation (C20192) 
+│   │   │   │   ├──  Manufacturer (C25392) 
+│   │   │   │   │   ├── SARS-CoV-2 Test Manufacturer Name
+│   │   │   │   │   └── SARS-CoV-2 Test Manufacturer Specify Other Name
+│   │   │   │   └──  Student (C75561) 
+│   │   │   │       ├── Employment Status
+│   │   │   │       └── Parent's Employment Status
+│   │   │   └── Ability to Find Equivalent Job
+│   │   ├──  Social Sciences (C17141) 
+│   │   │   └──  Economics (C61331) 
+│   │   │       └──  Medical Economics (C16527) 
+│   │   │           └──  Insurance and Payment Issues (C18928) 
+│   │   │               └──  Insurance (C16745) 
+│   │   │                   └──  Health Insurance (C157356) 
+│   │   │                       ├── Health Insurance Specify Other Type
+│   │   │                       ├── Health Insurance Type
+│   │   │                       └── Importance of Health Insurance in Seeking Care
+│   │   └──  Technology (C17187) 
+│   │       └──  Information Sciences (C16733) 
+│   │           └──  Informatics (C18145) 
+│   │               └──  Bioinformatics (C17964) 
+│   │                   └──  Metabolomics (C49019) 
+│   │                       ├── Aliquot volume in mL
+│   │                       ├── Biospecimen Collection Vial Type
+│   │                       ├── Biospecimen Collection Vial Type Specify Other
+│   │                       ├── Chromatography Method Specify Other Type
+│   │                       ├── Chromatography Method Type 
+│   │                       ├── Metabolomics Biospecimen Specify Other Type
+│   │                       ├── Metabolomics Biospecimen Type
+│   │                       ├── Metabolomics Platform Specify Other Type
+│   │                       ├── Metabolomics Platform Type
+│   │                       ├── Metabolomics Quality Control Measures
+│   │                       ├── Metabolomics Quality Control Measures Occurrence Indicator
+│   │                       └── Overall Metabolomics Findings
+│   ├──  Outcome (C20200) 
+│   │   ├──  Dead (C28554) 
+│   │   │   └── COVID-19 Related Death Indicator
+│   │   └──  Experimental Result (C76125) 
+│   │       ├── Lab Result Not Done Occurrence Indicator
+│   │       ├── SARS-CoV-2 Test Date of Result
+│   │       └── SARS-CoV-2 Test Overall Result
+│   ├──  Person (C25190) 
+│   │   ├──  Family Member (C41256) 
+│   │   │   └──  Relative (C21480) 
+│   │   │       └──  Parent (C42709) 
+│   │   │           └── Parent's Current Educational Attainment
+│   │   ├──  Frontline Essential Worker (C179413) 
+│   │   │   ├── Frontline or Essential Worker Category
+│   │   │   └── Other Frontline or Essential Worker Indicator
+│   │   ├──  Member (C25368) 
+│   │   │   └──  Household Member (C132449) 
+│   │   │       └── Shared Living Space Person Ability to Isolate Indicator
+│   │   ├──  Patient (C16960) 
+│   │   │   ├── Date of Birth*
+│   │   │   └── Employed in Healthcare Indicator
+│   │   └── Ancestry
+│   ├──  Provider (C37900) 
+│   │   ├── Distance to Routine Healthcare in Miles
+│   │   └── Distance to Testing in Miles
+│   ├──  Relationship (C25648) 
+│   │   └── Adverse Event Related to Study Treatment Indicator
+│   ├──  Risk (C17102) 
+│   │   ├── SARS-CoV-2 Risk Behavior Occurrence Indicator
+│   │   └── SARS-CoV-2 Risk Behavior Type
+│   ├──  Social Circumstances (C20188) 
+│   │   └──  Socioeconomic Factors (C17468) 
+│   │       ├──  Education Level (C17953) 
+│   │       │   ├── Current Educational Attainment
+│   │       │   ├── Current Educational Attainment
+│   │       │   └── Parent's Current Educational Attainment
+│   │       └──  Income (C41150) 
+│   │           ├── Ability to Find Equivalent Job
+│   │           ├── Pre-Pandemic Monthly Income Amount
+│   │           └── Pre-Pandemic Monthly IncomeÂ Range
+│   ├──  Source (C25683) 
+│   │   └── Pre-Pandemic Monthly Income Amount
+│   ├──  Strategy (C147914) 
+│   │   └──  Mitigation Strategy (C173767) 
+│   │       ├── SARS-CoV-2 Mitigation Strategy Frequent Adherence Occurrence
+│   │       ├── SARS-CoV-2 Mitigation Strategy Specify Other Type
+│   │       └── SARS-CoV-2 Mitigation Strategy Type
+│   ├──  Supplement (C68641) 
+│   │   ├── Current Medication Name
+│   │   └── Supplemental Oxygen Occurrence Indicator
+│   ├──  Target (C25702) 
+│   │   ├── Travel Destination Country 
+│   │   └── Travel Destination State
+│   ├──  Terminology Entity (C42698) 
+│   │   ├──  Linguistic Form (C84268) 
+│   │   │   └──  Term (C45559) 
+│   │   │       └──  MedDRA Low Level Term (C71886) 
+│   │   │           └── Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
+│   │   └──  Nomenclature (C48298) 
+│   │       └── Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
+│   └──  Version (C25714) 
+│       └──  Technology Platform Version (C45378) 
+│           ├── Metabolomics Platform Specify Other Type
+│           └── Metabolomics Platform Type
+├── Disease, Disorder or Finding (C7057) 
+│   ├──  Disease or Disorder (C2991) 
+│   │   ├──  Disorder by Site (C27551) 
+│   │   │   └──  Immune System and Related Disorders (C27351) 
+│   │   │       └──  Immune System Disorder (C3507) 
+│   │   │           └──  Hypersensitivity (C3114) 
+│   │   │               └──  Allergic Reaction (C114476) 
+│   │   │                   └── Allergen Type
+│   │   ├──  Non-Neoplastic Disorder (C53529) 
+│   │   │   └──  Non-Neoplastic Disorder by Special Category (C53547) 
+│   │   │       ├──  Congenital or Acquired Anatomic Abnormality (C36287) 
+│   │   │       │   └──  Congenital Abnormality (C2849) 
+│   │   │       │       └── Adverse Event Due to Congenital Anomaly Indicator
+│   │   │       ├──  Epidemic Disorder (C171452) 
+│   │   │       │   └──  Pandemic Disorder (C171519) 
+│   │   │       │       ├── Pre-Pandemic Monthly Income Amount
+│   │   │       │       └── Pre-Pandemic Monthly IncomeÂ Range
+│   │   │       └──  Inflammatory Disorder (C93210) 
+│   │   │           └──  Infectious Disorder (C26726) 
+│   │   │               └──  Viral Infection (C3439) 
+│   │   │                   └──  Coronavirus Infection (C181757) 
+│   │   │                       └──  COVID-19 Infection (C171133) 
+│   │   │                           ├── COVID-19 Mental Health Symptom Type*
+│   │   │                           ├── COVID-19 Psychosocial Symptom Occurrence Indicator
+│   │   │                           ├── COVID-19 Specific Medications Occurrence Indicator
+│   │   │                           ├── COVID-19 Symptoms At Time of Testing Indicator
+│   │   │                           ├── COVID-19 Vaccine Name
+│   │   │                           ├── COVID-19 Vaccine Specify Other Name
+│   │   │                           ├── Quality of Life (QOL) Rating
+│   │   │                           ├── SARS-CoV-2 Impact on Health Finding Type
+│   │   │                           ├── SARS-CoV-2 Test COVID-19 Infection Detection
+│   │   │                           ├── SARS-CoV-2 Tested Occurrence Indicator
+│   │   │                           ├── Self-Reported COVID-19 Symptom Dizziness Confirmed by Heart Rate and Blood Pressure Indicator
+│   │   │                           ├── Self-Reported COVID-19 Symptom Occurrence Indicator
+│   │   │                           ├── Self-Reported COVID-19 Symptom Onset Date Indicator
+│   │   │                           ├── Self-Reported COVID-19 Symptom Onset Date*
+│   │   │                           └── Self-Reported COVID-19 Symptom Type*
+│   │   └── Comorbidity or Underlying Condition Specify Other Type
+│   └──  Finding (C3367) 
+│       ├──  Clinical Test Result (C77140) 
+│       │   ├──  Abnormal Chest Radiograph (C168098) 
+│       │   │   └── Chest-X-Ray Result
+│       │   ├──  Laboratory Test Result (C36292) 
+│       │   │   ├── Lab Result Specify Other Type
+│       │   │   ├── Lab Result Type
+│       │   │   ├── Lab Result Value
+│       │   │   ├── SARS-CoV-2 Test COVID-19 Infection Detection
+│       │   │   └── SARS-CoV-2 Test Date of Result
+│       │   └── SARS-CoV-2 Test Date of Result
+│       ├──  Finding by Cause (C36291) 
+│       │   ├──  Adverse Event (C41331) 
+│       │   │   ├──  Adverse Event by CTCAE Category (C53781) 
+│       │   │   │   └──  Adverse Event Associated with the Nervous System (C53808) 
+│       │   │   │       └──  Dizziness, CTCAE 3.0 (C55385) 
+│       │   │   │           └── Self-Reported COVID-19 Symptom Dizziness Confirmed by Heart Rate and Blood Pressure Indicator
+│       │   │   ├──  Adverse Event by Severity (C52680) 
+│       │   │   │   └──  Adverse Event Severity Grade (C166200) 
+│       │   │   │       └── Adverse Event Severity Grade
+│       │   │   ├── Adverse Event Due to Congenital Anomaly Indicator
+│       │   │   └── Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name
+│       │   ├──  Complication (C2959) 
+│       │   │   ├── COVID-19 Complication
+│       │   │   ├── COVID-19 Complication Occurrence
+│       │   │   ├── COVID-19 Complication Onset Date
+│       │   │   └── COVID-19 Complication Other
+│       │   └──  Infection (C128320) 
+│       │       ├──  Co-infection (C173511) 
+│       │       │   └── Coinfection Present
+│       │       └──  Superinfection (C177386) 
+│       │           └── Superinfection Present
+│       ├──  Finding by Site or System (C36278) 
+│       │   ├──  Cardiovascular System Finding (C35552) 
+│       │   │   └──  Blood Pressure Finding (C54707) 
+│       │   │       └── Self-Reported COVID-19 Symptom Dizziness Confirmed by Heart Rate and Blood Pressure Indicator
+│       │   └──  Reproductive System Finding (C36284) 
+│       │       └──  Female Reproductive System Finding (C117720) 
+│       │           └──  Pregnancy Finding (C92720) 
+│       │               └──  Pregnancy Status (C69218) 
+│       │                   └──  Pregnant (C124295) 
+│       │                       ├── Current Pregnancy Due Date
+│       │                       └── Current Pregnancy Indicator
+│       └──  Sign or Symptom (C100104) 
+│           ├──  Sign (C53458) 
+│           │   └──  Fever (C3038) 
+│           │       ├── Fever Duration
+│           │       └── Fever Duration
+│           ├──  Symptom (C4876) 
+│           │   ├──  Sickness (C107499) 
+│           │   │   ├── Self-Reported COVID-19 Symptom Type*
+│           │   │   ├── Symptom Exacerbation Type
+│           │   │   └── Usual Place of Health Care Type*
+│           │   ├── COVID-19 Psychosocial Symptom Occurrence Indicator
+│           │   ├── COVID-19 Symptoms At Time of Testing Indicator
+│           │   ├── Self-Reported COVID-19 Symptom Dizziness Confirmed by Heart Rate and Blood Pressure Indicator
+│           │   ├── Self-Reported COVID-19 Symptom Occurrence Indicator
+│           │   ├── Self-Reported COVID-19 Symptom Onset Date*
+│           │   ├── Self-Reported COVID-19 Symptom Type*
+│           │   ├── Symptom Duration After Diagnosis Type 
+
+
+│           │   ├── Symptom Duration After Diagnosis Value
+│           │   ├── Symptom Duration Before Diagnosis Type
+│           │   ├── Symptom Exacerbation Occurrence Indicator
+│           │   ├── Symptom Exacerbation Specify Other Type
+│           │   ├── Symptom Exacerbation Type
+│           │   ├── Symptom at Discharge Occurrence Indicator
+│           │   ├── Symptom at Discharge Specify Other Type
+│           │   └── Symptom at Discharge Type
+│           └──  Vital Signs (C154628) 
+│               ├── Vital Signs Date and Time
+│               ├── Vital Signs Measurement
+│               ├── Vital Signs Measurement Occurrence Indicator
+│               ├── Vital Signs Specify Other Timepoint
+│               ├── Vital Signs Timepoint
+│               ├── Vital Signs Type*
+│               └── Vital Signs Unit Of Measure
+├── Drug, Food, Chemical or Biomedical Material (C1908) 
+│   ├──  Chemical Modifier (C1932) 
+│   │   └──  Allergen (C62651) 
+│   │       ├── Allergen Specify Other Type
+│   │       └── Allergen Type
+│   ├──  Drug or Chemical by Structure (C1913) 
+│   │   └──  Inorganic Chemical (C579) 
+│   │       └──  Element (C1940) 
+│   │           └──  Oxygen (C722) 
+│   │               └── Supplemental Oxygen Occurrence Indicator
+│   └──  Pharmacologic Substance (C1909) 
+│       └──  Immunotherapeutic Agent (C308) 
+│           └──  Vaccine (C923) 
+│               ├──  COVID-19 Vaccine (C173023) 
+│               │   └── COVID-19 Vaccine Receptivity Status
+│               └──  Viral Vaccine (C96404) 
+│                   └──  Recombinant Viral Vaccine (C1572) 
+│                       └──  Vaccinia Vaccine (C2313) 
+│                           ├── COVID-19 Vaccine Name
+│                           └── COVID-19 Vaccine Specify Other Name
+├── Gene Product (C26548) 
+│   └──  Protein (C17021) 
+│       └──  Protein, Organized by Origin (C20032) 
+│           └──  Non-Human Protein (C20158) 
+│               └──  Viral Protein (C17254) 
+│                   └──  SARS-CoV-2 Spike Glycoprotein (C178209) 
+│                       ├── SARS-CoV-2 Spike Protein Mutations Name
+│                       ├── SARS-CoV-2 Spike Protein Mutations Occurrence Indicator
+│                       └── SARS-CoV-2 Spike Protein Mutations Specify Other Name
+├── Manufactured Object (C97325) 
+│   └──  Diagnostic, Therapeutic, or Research Equipment (C19238) 
+│       ├──  Corrective Lens (C87188) 
+│       │   └──  Glasses (C87148) 
+│       │       └── Vision Disability 
+│       ├──  Device (C62103) 
+│       │   ├──  Medical Device (C16830) 
+│       │   │   └──  Package Type (C43164) 
+│       │   │       └──  Vial (C41275) 
+│       │   │           ├── Biospecimen Collection Vial Type
+│       │   │           └── Biospecimen Collection Vial Type Specify Other
+│       │   ├── COVID-19 Treatment or Device Occurrence Indicator
+│       │   ├── COVID-19 Treatment or Device Specify Other Type
+│       │   └── COVID-19 Treatment or Device Type
+│       └──  Instrumentation (C16742) 
+│           └──  Freezer (C84327) 
+│               └── Minutes until sample collected reaches the freezer 
+├── Molecular Abnormality (C3910) 
+│   └──  Molecular Sequence Variation (C97926) 
+│       └──  Molecular Genetic Variation (C36391) 
+│           └──  Mutation Abnormality (C45576) 
+│               └──  Gene Mutation (C18093) 
+│                   ├── SARS-CoV-2 Spike Protein Mutations Name
+│                   ├── SARS-CoV-2 Spike Protein Mutations Occurrence Indicator
+│                   └── SARS-CoV-2 Spike Protein Mutations Specify Other Name
+├── Organism (C14250) 
+│   └──  Virus (C14283) 
+│       └──  RNA Virus (C14269) 
+│           └──  Positive Sense ssRNA Virus (C14351) 
+│               └──  Coronaviridae (C113205) 
+│                   └──  Coronavirus (C26431) 
+│                       ├──  Betacoronavirus (C113207) 
+│                       │   └──  SARS Coronavirus 2 (C169076) 
+│                       │       ├── COVID-19 Case Classification
+│                       │       ├── COVID-19 Case Classification Date
+│                       │       ├── COVID-19 Complication
+│                       │       ├── COVID-19 Complication Occurrence
+│                       │       ├── COVID-19 Complication Onset Date
+│                       │       ├── COVID-19 Complication Onset Date Indicator
+│                       │       ├── COVID-19 Complication Other
+│                       │       ├── COVID-19 Disease Severity
+│                       │       ├── COVID-19 Medication Pre-mature Discontinuation Reason
+│                       │       ├── COVID-19 Medication Pre-mature Discontinuation Reason Reason medication was discontinued, select all that apply.
+│                       │       ├── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason
+│                       │       ├── COVID-19 Medication Pre-mature Discontinuation Specify Other Reason Specify other reason medication was discontinued pre-maturely
+│                       │       ├── COVID-19 Reinfection Present
+│                       │       ├── COVID-19 Related Death Indicator
+│                       │       ├── COVID-19 Specific Medication Specify Other Type
+│                       │       ├── COVID-19 Specific Medication Specify Other Type Other COVID-19-Specific Medication, Specify:
+│                       │       ├── COVID-19 Specific Medication Type
+│                       │       ├── COVID-19 Specific Medication Type
+│                       │       ├── COVID-19 Specific Medication Type What medications did the patient take to treat COVID-19?
+│                       │       ├── Concomitant Medication Name
+│                       │       ├── Concomitant Medication Name Other medications, taken than those taken to treat COVID- 19?
+│                       │       ├── Concomitant Medication Name*
+│                       │       ├── Home SARS-CoV-2 Test Name
+│                       │       ├── Home SARS-CoV-2 Test Specify Other Name
+│                       │       ├── Overall Metabolomics Findings
+│                       │       ├── SARS-CoV-2 Genome Variant Name
+│                       │       ├── SARS-CoV-2 Genome Variant Occurrence Indicator
+│                       │       ├── SARS-CoV-2 Genome Variant Specify Other Name
+│                       │       ├── SARS-CoV-2 Impact on Health Finding Type
+│                       │       ├── SARS-CoV-2 Impact on Healthcare Utilization Type
+│                       │       ├── SARS-CoV-2 Risk Behavior Occurrence Indicator
+│                       │       ├── SARS-CoV-2 Risk Behavior Type
+│                       │       ├── SARS-CoV-2 Test COVID-19 Infection Detection
+│                       │       ├── SARS-CoV-2 Test COVID-19 Infection Detection
+│                       │       ├── SARS-CoV-2 Test Date and Time
+│                       │       ├── SARS-CoV-2 Test Date and Time Indicator
+│                       │       ├── SARS-CoV-2 Test Date of Result
+│                       │       ├── SARS-CoV-2 Test Date of Result
+│                       │       ├── SARS-CoV-2 Test Manufacturer Name
+│                       │       ├── SARS-CoV-2 Test Manufacturer Specify Other Name
+│                       │       ├── SARS-CoV-2 Test Overall Result
+│                       │       ├── SARS-CoV-2 Test Processing Location Type
+│                       │       ├── SARS-CoV-2 Test Specify Other Processing Location Type
+│                       │       ├── SARS-CoV-2 Test Specify Other Specimen Collection Location Type
+│                       │       ├── SARS-CoV-2 Test Specimen Collection Location Type
+│                       │       ├── SARS-CoV-2 Test Type
+│                       │       ├── SARS-CoV-2 Test Type
+│                       │       ├── SARS-CoV-2 Tested Occurrence Indicator
+│                       │       ├── SARS-CoV-2 Tested Occurrence Indicator
+│                       │       ├── Self-Reported COVID-19 Diagnosis Date
+│                       │       └── Self-Reported COVID-19 Diagnosis Occurrence Indicator
+│                       ├── Pre-Pandemic Monthly Income Amount
+│                       └── Pre-Pandemic Monthly IncomeÂ Range
+└── Property or Attribute (C20189) 
+    ├──  Characteristic (C25447) 
+    │   ├──  Population Group Characteristic (C171088) 
+    │   │   └──  Demographics (C16495) 
+    │   │       └──  Comorbidity (C16457) 
+    │   │           ├── Comorbidity or Underlying Condition Occurrence Indicator
+    │   │           ├── Comorbidity or Underlying Condition Specify Other Type
+    │   │           └── Comorbidity or Underlying Condition Type
+    │   ├──  Temperature (C25206) 
+    │   │   └── Long-term storage temperature
+    │   └──  Volume (C25335) 
+    │       └──  Fluid Volume (C124480) 
+    │           └──  Aliquot Volume (C171279) 
+    │               └── Aliquot volume in mL
+    ├──  Distance (C25167) 
+    │   ├── Distance to Hospital Care in Miles
+    │   ├── Distance to Routine Healthcare in Miles
+    │   ├── Distance to Testing in Miles
+    │   └── Distance to Testing in Time
+    ├──  Equality (C61582) 
+    │   └── Ability to Find Equivalent Job
+    ├──  Health (C25178) 
+    │   ├── COVID-19 Mental Health Symptom Type*
+    │   ├── Confidence with Health Forms
+    │   ├── Distance to Testing in Miles
+    │   ├── Distance to Testing in Time
+    │   └── SARS-CoV-2 Impact on Health Finding Type
+    ├──  Location (C25341) 
+    │   ├── SARS-CoV-2 Test Processing Location Type
+    │   └── SARS-CoV-2 Test Specify Other Processing Location Type
+    ├──  Person/Individual Attribute (C171087) 
+    │   └──  Personal Attribute (C19332) 
+    │       ├──  Ability (C78209) 
+    │       │   ├── Ability to Find Equivalent Job
+    │       │   └── Telework Eligibility Status
+    │       ├──  Age (C25150) 
+    │       │   ├── Age
+    │       │   └── Age Units
+    │       ├──  Birthplace (C176764) 
+    │       │   ├── Birthplace Outside the US
+    │       │   └── Birthplace US State
+    │       ├──  Blood Type (C61009) 
+    │       │   └── Blood Type
+    │       ├──  Employment Status (C179143) 
+    │       │   └──  Employed (C25172) 
+    │       │       ├──  Telework (C180631) 
+    │       │       │   └── Telework Eligibility Status
+    │       │       ├── Employment Status
+    │       │       └── Parent's Employment Status
+    │       ├──  Looking for Work (C165487) 
+    │       │   ├── Employment Status
+    │       │   └── Parent's Employment Status
+    │       ├──  Marital Status (C25188) 
+    │       │   └── Marital Status
+    │       ├──  National Origin (C28407) 
+    │       │   └── Ancestry
+    │       ├──  Quality of Life (C17047) 
+    │       │   └── Quality of Life (QOL) Rating
+    │       ├──  Sexual Orientation (C84361) 
+    │       │   ├── Sexual Orientation Expanded Status
+    │       │   ├── Sexual Orientation Specify Other Expanded Status
+    │       │   ├── Sexual Orientation Status
+    │       │   └── Sexual Orientation Status
+    │       └──  Vital Status (C25717) 
+    │           └── Patient Vital Status
+    ├──  Primary Language Spoken (C132459) 
+    │   └── Primary Language Spoken at home?
+    ├──  Qualifier (C41009) 
+    │   ├──  Anatomy Qualifier (C13442) 
+    │   │   └──  Distal (C25237) 
+    │   │       ├── Distance to Hospital Care in Miles
+    │   │       ├── Distance to Routine Healthcare in Miles
+    │   │       └── Distance to Testing in Miles
+    │   ├──  Clinical or Research Assessment Answer (C91106) 
+    │   │   ├──  Complete (C25250) 
+    │   │   │   ├── Parent's Current Educational Attainment
+    │   │   │   └── Parent's Current Educational Attainment
+    │   │   ├──  Excellent (C82488) 
+    │   │   │   └── Overall Health Condition
+    │   │   ├──  Fair (C82489) 
+    │   │   │   └── Overall Health Condition
+    │   │   ├──  Fair Health (C157031) 
+    │   │   │   └── Overall Health Condition
+    │   │   ├──  Good (C64975) 
+    │   │   │   └── Overall Health Condition
+    │   │   ├──  Severe (C70667) 
+    │   │   │   └── COVID-19 Disease Severity
+    │   │   ├──  Usual (C102843) 
+    │   │   │   └── Usual Place of Health Care Type*
+    │   │   └──  Very Poor (C104315) 
+    │   │       └── Overall Health Condition
+    │   ├──  Disease Qualifier (C27992) 
+    │   │   └──  Healthy (C115935) 
+    │   │       └── Overall Health Condition
+    │   ├──  General Qualifier (C27993) 
+    │   │   ├──  Administered (C25382) 
+    │   │   │   └── COVID-19 Vaccine Name
+    │   │   ├──  Availability (C25429) 
+    │   │   │   └── COVID-19 Vaccine Receptivity Status
+    │   │   ├──  Condition (C25457) 
+    │   │   │   └──  Medical Condition (C156809) 
+    │   │   │       ├── Comorbidity or Underlying Condition Occurrence Indicator
+    │   │   │       └── Comorbidity or Underlying Condition Type
+    │   │   ├──  Consequence (C74555) 
+    │   │   │   └── COVID-19 Mental Health Symptom Type*
+    │   │   ├──  Done (C111784) 
+    │   │   │   └── Lab Result Not Done Occurrence Indicator
+    │   │   ├──  Easy (C86068) 
+    │   │   │   └── Ability to Find Equivalent Job
+    │   │   ├──  Emotional (C25495) 
+    │   │   │   ├── Concentration Disability 
+    │   │   │   └── Daily Activities Disability
+    │   │   ├──  Exact (C86021) 
+    │   │   │   └── Pre-Pandemic Monthly IncomeÂ Range
+    │   │   ├──  Examined (C25500) 
+    │   │   │   └── Major Classes of Metabolites Examined
+    │   │   ├──  Full (C25517) 
+    │   │   │   ├── Full Name
+    │   │   │   └── Full Residential Address*
+    │   │   ├──  Generalized (C63764) 
+    │   │   │   └── Overall Health Condition
+    │   │   ├──  Important (C115916) 
+    │   │   │   └── Importance of Health Insurance in Seeking Care
+    │   │   ├──  Major (C45368) 
+    │   │   │   └── Major Classes of Metabolites Examined
+    │   │   ├──  Present (C25626) 
+    │   │   │   ├── Coinfection Present
+    │   │   │   ├── Superinfection Present
+    │   │   │   ├── Symptom Duration After Diagnosis Type 
+    │   │   │   └── Symptom Duration Before Diagnosis Type
+    │   │   ├──  Same (C64637) 
+    │   │   │   └── Ability to Find Equivalent Job
+    │   │   ├──  Treating (C25705) 
+    │   │   │   ├── Treating Healthcare Facility Name
+    │   │   │   └── Treating Healthcare Facility Name What is the facility name where the patient was treated?
+    │   │   ├──  Underlying (C154417) 
+    │   │   │   ├── Comorbidity or Underlying Condition Occurrence Indicator
+    │   │   │   ├── Comorbidity or Underlying Condition Specify Other Type
+    │   │   │   └── Comorbidity or Underlying Condition Type
+    │   │   └──  Unknown (C17998) 
+    │   │       ├── Medication Discontinued Date Unknown Indicator
+    │   │       
+    │   └──  Temporal Qualifier (C21514) 
+    │       ├──  Date (C25164) 
+    │       │   ├──  Birth Date (C68615) 
+    │       │   │   └── Date of Birth*
+    │       │   ├──  Collection Date (C81286) 
+    │       │   │   └── Sample Collection Date
+    │       │   ├──  Date of Death (C70810) 
+    │       │   │   ├── Death Date
+    │       │   │   └── Death Date Indicator
+    │       │   ├──  End Date (C68617) 
+    │       │   │   └──  Adverse Event End Date (C78537) 
+    │       │   │       └── Adverse Event End Date 
+    │       │   ├──  Expected Date of Confinement (C81247) 
+    │       │   │   └── Current Pregnancy Due Date
+    │       │   ├──  Informed Consent Date (C93579) 
+    │       │   │   ├── Informed Consent Signed Date
+    │       │   │   └── Informed Consent Signed Date N/A or Not Reported Indicator
+    │       │   ├──  Onset Date (C93613) 
+    │       │   │   ├──  Symptom Onset Date (C119242) 
+    │       │   │   │   └── Self-Reported COVID-19 Symptom Onset Date Indicator
+    │       │   │   ├── COVID-19 Complication Onset Date
+    │       │   │   └── COVID-19 Complication Onset Date Indicator
+    │       │   ├──  Start Date (C68616) 
+    │       │   │   └──  Adverse Event Start Date (C78536) 
+    │       │   │       └── Adverse Event Start Date
+    │       │   ├──  Test Date (C82512) 
+    │       │   │   └── SARS-CoV-2 Test Date and Time
+    │       │   ├── COVID-19 Complication Onset Date
+    │       │   ├── COVID-19 Complication Onset Date Indicator
+    │       │   ├── Date of Chest Examination
+    │       │   ├── Discharge Date
+    │       │   ├── Hospitalization Date*
+    │       │   ├── Informed Consent Signed Date N/A or Not Reported Indicator
+    │       │   ├── Lab Result Date
+    │       │   ├── Recent Travel Date of Arrival in the 14 days prior to onset of symptoms or illness
+    │       │   ├── Recent Travel Date of Return in the 14 days prior to onset of symptoms or illness
+    │       │   ├── SARS-CoV-2 Test Date of Result
+    │       │   └── Sample Collection Date
+    │       ├──  Date and Time (C37939) 
+    │       │   └── SARS-CoV-2 Test Date and Time Indicator
+    │       ├──  Duration (C25330) 
+    │       │   ├── Fever Duration
+    │       │   ├── Fever Duration
+    │       │   └── Symptom Duration After Diagnosis Value
+    │       ├──  Long-Term (C25322) 
+    │       │   └── Long-term storage temperature
+    │       ├──  Now (C65002) 
+    │       │   └── Current Pregnancy Indicator
+    │       ├──  Onset (C25279) 
+    │       │   └──  Symptom Onset (C124353) 
+    │       │       └── Travel History in 14 days prior to onset of symptoms or illness
+    │       ├──  Past (C25609) 
+    │       │   ├── Cost Delayed Healthcare Occurrence Indicator
+    │       │   └── Delayed Healthcare Due to Transportation Indicator
+    │       ├──  Period (C25616) 
+    │       │   ├──  12 Months (C156842) 
+    │       │   │   ├── Cost Delayed Healthcare Occurrence Indicator
+    │       │   │   ├── Delayed Healthcare Due to Transportation Indicator
+    │       │   │   └── Job Insecurity in 12 Months
+    │       │   └──  Past 30 days (C131330) 
+    │       │       └── Current Medication Name
+    │       ├──  Prior (C25629) 
+    │       │   ├── Recent Travel Date of Return in the 14 days prior to onset of symptoms or illness
+    │       │   ├── Symptom Duration Before Diagnosis Type
+    │       │   ├── Travel History in 14 days prior to onset of symptoms or illness
+    │       │   └── Travel History in 14 days prior to onset of symptoms or illness
+    │       ├──  Recent (C25280) 
+    │       │   ├── Recent Travel Date of Arrival in the 14 days prior to onset of symptoms or illness
+    │       │   └── Recent Travel Date of Return in the 14 days prior to onset of symptoms or illness
+    │       ├──  Time (C25207) 
+    │       │   ├──  Collection Time (C81287) 
+    │       │   │   ├──  Biospecimen Collection Time (C178869) 
+    │       │   │   │   └── COVID-19 Symptoms At Time of Testing Indicator
+    │       │   │   └── Minutes until sample collected reaches the freezer 
+    │       │   ├──  End Time (C82573) 
+    │       │   │   └──  Adverse Event End Time (C83046) 
+    │       │   │       └── Adverse Event End Time
+    │       │   ├──  Start Time (C78441) 
+    │       │   │   └──  Adverse Event Start Time (C78539) 
+    │       │   │       └── Adverse Event Start Time
+    │       │   ├──  Test Time (C82577) 
+    │       │   │   ├── Distance to Testing in Time
+    │       │   │   └── SARS-CoV-2 Test Date and Time
+    │       │   ├──  Vital Signs Time (C83155) 
+    │       │   │   └── Vital Signs Date and Time
+    │       │   ├── Comorbidity or Underlying Condition Type
+    │       │   ├── SARS-CoV-2 Risk Behavior Type
+    │       │   ├── Time from COVID Symptom Onset to Hospitalization
+    │       │   └── Time from COVID Symptom Onset to Hospitalization Unit of Measure
+    │       └──  Timepoint (C68568) 
+    │           └──  Vital Signs Time Point (C83159) 
+    │               ├── Vital Signs Specify Other Timepoint
+    │               └── Vital Signs Timepoint
+    ├──  Qualitative Concept (C92722) 
+    │   ├──  Data Type (C42645) 
+    │   │   └──  Long (C48311) 
+    │   │       └── Fever Duration
+    │   └── COVID-19 Vaccine Receptivity Status
+    ├──  Quality (C25283) 
+    │   ├── Metabolomics Quality Control Measures
+    │   └── Metabolomics Quality Control Measures Occurrence Indicator
+    ├──  Quantity (C25256) 
+    │   └── Pre-Pandemic Monthly Income  Range
+    ├──  Status (C25688) 
+    │   ├──  Health Status (C16669) 
+    │   │   ├──  Disability (C21007) 
+    │   │   │   ├── Concentration Disability 
+    │   │   │   ├── Daily Activities Disability
+    │   │   │   ├── Hearing Disability 
+    │   │   │   ├── Pre-Pandemic Monthly Income Amount
+    │   │   │   ├── Pre-Pandemic Monthly Income Range
+    │   │   │   └── Washing and Dressing Disability 
+    │   │   ├──  Individual Physical Condition (C106492) 
+    │   │   │   ├── Concentration Disability 
+    │   │   │   └── Daily Activities Disability
+    │   │   └──  Patient Status (C166244) 
+    │   │       └── Patient Status
+    │   ├── Patient Specify Other Status
+    │   └── Patient Specify Other Status Specify other patient type
+    ├──  Temporal Frequency (C25515) 
+    │   └── Current Medication Dose Frequency
+    └──  Unit of Measure (C25709) 
+        ├──  Unit by Category (C42568) 
+        │   ├──  Age Unit (C50400) 
+        │   │   ├──  Day (C25301) 
+        │   │   │   ├── Days Hospitalized 
+        │   │   │   └── Days in Intensive Care Unit 
+        │   │   └──  Year (C29848) 
+        │   │       └── Years at Residence
+        │   ├──  Unit of Length (C42578) 
+        │   │   └──  Mile Unit of Distance (C71181) 
+        │   │       └──  Mile (C71183) 
+        │   │           ├── Distance to Hospital Care in Miles
+        │   │           ├── Distance to Routine Healthcare in Miles
+        │   │           └── Distance to Testing in Miles
+        │   └──  Unit of Time (C42574) 
+        │       └──  Minute (C48154) 
+        │           └── Minutes until sample collected reaches the freezer 
+        ├── Age Units
+        ├── Current Medication Dose Unit of Measure
+        ├── Fever Duration Unit of Measure
+        ├── Symptom Duration After Diagnosis Unit of Measure
+        ├── Symptom Duration Before Diagnosis Unit of Measure
+        ├── Time from COVID DX to Hospitalization Unit of Measure
+        └── Time from COVID Symptom Onset to Hospitalization Unit of Measure
