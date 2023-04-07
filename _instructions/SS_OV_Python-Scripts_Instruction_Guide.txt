@@ -4,39 +4,8 @@ Python pipeline:
 2.	batch_query_pipeline- API to MetaMap set of scripts, created, and supported by BRICS developers. The main GitHub for developing these scripts is Kevin A. GitHub repository. The package allows to load in a data dictionary and map CDE semantics to UMLS CUIs using MetaMap API from NLM
 3.	umls-to-vocabularies- for each CDE/each UMLS CUI from #2, returns the corresponding NCIt CUI.
 4.	nci-concept-lineage - contains “NCIt concept lineage retrieval form EVS file.xlsx” file which uses a formula applied to December 2022 NCI Thesaurus download from EVS.
-5.	nci-concept-to-tree -  for each CDE, create a visual representation the NCIt concept hierarchy from #3 as tree, where NCIt concepts are presented as branches and each CDE as a leaf.
+5.	nci-concept-to-tree -  for each CDE, creates a visual representation the NCIt concept hierarchy from #3 as tree, where NCIt concepts are presented as branches and each CDE as a leaf.
 
-Step 1: 
-cde-pre-processing - converts Project 5 COVID CDE spreadsheet to be digested by MetaMap. This step can be omitted.
-
-Step 2: 
-Mapping CDE (and CDE PVs) attribures to UMLS concepts
-Directory: batch_query_pipeline
-
-The set of scripts (developed by KA (BRICS)) is designed to map CDE attributes to UMLS concepts.
-can be run either as Jupiter notebook files (.ipynb or a Python scripts (.py))
-Refer to Kevin A GitHub for the latest set of scripts (https://github.com/kevon217/data-dictionary-cui-mapping)
-
-Requirements
-To use the MetaMap python API requires to build it on your local the Python-based API 
-created for the Indexing Initiative Scheduler facility (NLM) used to provide users with the ability to programmatically submit jobs to 
-the Scheduler Batch and Interactive facilities. Available at https://github.com/lhncbc/skr_web_python_api
-
-Step 3
-for each CDE/each UMLS CUI returns the corresponding NCIt CUI.
-Directory: umls-to-vocabularies-
-
-2. umls-to-vocabularies.py (UMLS CUIs to NCI, or vocabulary of choice mapping)
-3. Multiple_COVID_NCITree.py
-
-Step 4
-nci-concept-lineage - contains “NCIt concept lineage retrieval form EVS file.xlsx” file 
-which uses a formula applied to December 2022 NCI Thesaurus download from EVS.
-
-Step 5:
-Creates trees from multiple COVID CDE tree lineages
-nci-concept-to-tree -  for each CDE, create a visual representation the NCIt concept hierarchy from #3 as tree, where NCIt concepts are presented as branches and each CDE as a leaf.
-__________
 Requirements:
 The scripts were tested under Anaconda Navigator (Anaconda 3) 
 The UMLS API key needed which can be found in the "My Profile" section of your account at UMLS.
@@ -65,9 +34,47 @@ json
 pprint
 openpyxl
 requests
+_________________
+Pipeline steps:
 
+Step 1: 
+Pre-processing step (cde-pre-processing): addressing the issue that all CDE repositories have slightly different templates
+From Project 5 COVID CDE spreadsheet take 2 columns: CDE Name and Question Text. Save as a CSV.
+Run through cde-pre-processing.py
+Save the output as a CSV file
 
+Step 2:  
+API to MetaMap set of scripts (batch_query_pipeline.py ): load in a data dictionary and map CDE semantics to UMLS CUIs using MetaMap API from NLM
+Set up the configuration file (can be done once)
+Specifically enter user name and API key (can be done once)
+Take the output from step #1, run through batch_query_pipeline.py
+Review the output, select the UMLS CUIs best match CDE semantics
+Format and save the output as .xls file
 
+Step 3: 
+UMLS to NCIt (umls-to-vocabularies.py): returning NCIt CUIs for UMLS CUIs
+Take the output from the step #2.
+Run thorough umls-to-vocabularies.py
+Save the output as a CSV file
+
+Step 4: 
+Retrieve NCIt concept lineage (nci-concept-lineage)
+nci-concept-lineage - contains “NCIt concept lineage retrieval form EVS file.xlsx” file 
+which uses a formula applied to December 2022 NCI Thesaurus download from EVS.
+
+Take the output from #3 and 
+Apply the MS Excel formula from “NCIt concept lineage retrieval from EVS file.xlsx” 
+Save the output file as a CSV file.
+
+Step 5: 
+Creates trees from multiple COVID CDE tree lineages
+nci-concept-to-tree -  for each CDE, create a visual representation the NCIt concept hierarchy from #3 as tree, where NCIt concepts are presented as branches and each CDE as a leaf.
+
+Take an output from #4
+Run through nci-concept-to-tree.py 
+Review and save the output as a TXT file
+
+__________
 
 
 
