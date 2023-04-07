@@ -1,6 +1,6 @@
-a directory to store instructins on how to use scripts
-Python pipeline:
+a directory to store instructins on how to use the Python pipeline scripts
 
+Python pipeline:
 1.	cde-pre-processing - converts Project 5 COVID CDE spreadsheet to be digested by MetaMap. This step can be omitted.
 2.	batch_query_pipeline- API to MetaMap set of scripts, created, and supported by BRICS developers. The main GitHub for developing these scripts is Kevin A. GitHub repository. The package allows to load in a data dictionary and map CDE semantics to UMLS CUIs using MetaMap API from NLM
 3.	umls-to-vocabularies- for each CDE/each UMLS CUI from #2, returns the corresponding NCIt CUI.
