@@ -1,3 +1,5 @@
 We also found helpful to support the “cheat sheet list” of UMLS/NCIt concepts, which have been reviewed and approved by the curator 
 as valid concepts for a given CDE project. 
 Having this cheat sheet helps to “fine tune” MetaMap output and assure that the mapping is consistent across all CDEs developed by the project. 
+NCI Thesaurus Download December 2022 Synonyms 1.zip - is a file with NCIt concepts synonyms. We might want to explore using these synonyms in teh cheat sheet. 
+Work in progress.
